@@ -7,6 +7,7 @@ public class EnemisController : MonoBehaviour {
     public List<EnemyHunger> SpawnedEnemies;
     public int BaseSpawnInternal = 3;
     private float lastTimeEnemySpawned;
+    public int MaxAllowedEnemiesInScene=1;
 
     private GameObject Player;
 	// Use this for initialization
@@ -20,7 +21,7 @@ public class EnemisController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Time.time > this.lastTimeEnemySpawned + BaseSpawnInternal)
+        if (Time.time > this.lastTimeEnemySpawned + BaseSpawnInternal && this.SpawnedEnemies.Count < this.MaxAllowedEnemiesInScene)
         {
             this.lastTimeEnemySpawned = Time.time;
             int totalSpawnPoints = this.SpawnPoints.Count;
@@ -29,7 +30,19 @@ public class EnemisController : MonoBehaviour {
             newEnemy.transform.position = this.SpawnPoints[spawnPointIndex].transform.position;
             EnemyHunger enemyHungerComponent = newEnemy.GetComponent<EnemyHunger>();
             enemyHungerComponent.Target = this.Player;
-            newEnemy.name = "asdadasd";
+            this.SpawnedEnemies.Add(enemyHungerComponent);
+            //newEnemy.name = "asdadasd";
         }
 	}
+
+    internal void DefeatEnemy(EnemyHunger enemyHunger)
+    {
+        int indexOfEnemy = this.SpawnedEnemies.IndexOf(enemyHunger);
+        Debug.LogFormat("Index of enemy: {0}", indexOfEnemy);
+        if (indexOfEnemy >= 0)
+        {
+            GameObject.Destroy(enemyHunger.gameObject);
+            this.SpawnedEnemies.RemoveAt(indexOfEnemy);
+        }
+    }
 }

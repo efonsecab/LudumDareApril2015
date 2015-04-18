@@ -36,3 +36,5 @@ D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApri
 D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\obj\Debug\UnityVS.LudumDareApril2015.CSharp.Editor.csprojResolveAssemblyReference.cache
 D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\obj\Debug\Assembly-CSharp-Editor.dll
 D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\obj\Debug\Assembly-CSharp-Editor.pdb
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
