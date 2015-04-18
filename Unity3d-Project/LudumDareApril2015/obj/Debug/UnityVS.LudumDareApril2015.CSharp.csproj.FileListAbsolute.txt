@@ -1,0 +1,13 @@
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Temp\UnityVS_bin\Debug\UnityEditor.dll
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.dll
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Temp\UnityVS_bin\Debug\UnityEngine.dll
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Temp\UnityVS_bin\Debug\UnityEngine.xml
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Temp\UnityVS_bin\Debug\UnityEditor.xml
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\obj\Debug\UnityVS.LudumDareApril2015.CSharp.csprojResolveAssemblyReference.cache
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\obj\Debug\Assembly-CSharp.dll
+D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\obj\Debug\Assembly-CSharp.pdb
