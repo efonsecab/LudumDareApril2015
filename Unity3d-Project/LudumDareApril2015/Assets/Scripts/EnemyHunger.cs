@@ -33,8 +33,17 @@ public class EnemyHunger : MonoBehaviour {
 	void Update () {
         if (this.Target != null)
         {
-            //var fwd = transform.rotation * Vector3.forward;
-            //Debug.DrawRay(this.transform.position, fwd, Color.yellow);
+            if (this.Target.transform.position.x < this.transform.position.x)
+            {
+                this.transform.localEulerAngles = new Vector3(0,-90,0);
+            }
+            else
+                if (this.Target.transform.position.x > this.transform.position.x)
+                {
+                    this.transform.localEulerAngles = new Vector3(0, 90, 0);
+                }
+            var fwd = transform.rotation * Vector3.forward;
+            Debug.DrawRay(this.transform.position, fwd, Color.yellow);
             //Ray newRay = new Ray(this.transform.position, fwd);
             float distanceToPlayer = Vector3.Distance(this.gameObject.transform.position, this.Target.transform.position);
             if (distanceToPlayer > this.MinimumAllowedDistance)
@@ -52,7 +61,7 @@ public class EnemyHunger : MonoBehaviour {
     private void NavigateToPlayer()
     {
         this.gameObject.transform.position = Vector3.Lerp(this.gameObject.transform.position, this.Target.transform.position, Speed * Time.deltaTime);
-        this.gameObject.transform.LookAt(this.Target.transform.position);
+        //this.gameObject.transform.LookAt(this.Target.transform.position);
     }
 
     private void DamagePlayer()
