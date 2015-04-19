@@ -8,6 +8,7 @@ public class EnemisController : MonoBehaviour {
     public int BaseSpawnInternal = 3;
     private float lastTimeEnemySpawned;
     public int MaxAllowedEnemiesInScene=1;
+    private ScoreSystem PlayerScoreSystem;
 
     private GameObject Player;
 	// Use this for initialization
@@ -16,6 +17,7 @@ public class EnemisController : MonoBehaviour {
         if (this.SpawnedEnemies == null)
             this.SpawnedEnemies = new List<EnemyHunger>();
         this.lastTimeEnemySpawned = Time.time;
+        this.PlayerScoreSystem = this.Player.GetComponent<ScoreSystem>();
 	
 	}
 	
@@ -41,6 +43,7 @@ public class EnemisController : MonoBehaviour {
         Debug.LogFormat("Index of enemy: {0}", indexOfEnemy);
         if (indexOfEnemy >= 0)
         {
+            this.PlayerScoreSystem.AddToScore(enemyHunger.PointsPerDefeat);
             GameObject.Destroy(enemyHunger.gameObject);
             this.SpawnedEnemies.RemoveAt(indexOfEnemy);
         }

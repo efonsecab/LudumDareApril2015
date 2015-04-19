@@ -10,4 +10,3 @@ D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApri
 D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Temp\UnityVS_bin\Debug\UnityEditor.iOS.Extensions.Xcode.xml
 D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\obj\Debug\Assembly-CSharp-firstpass.dll
 D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\obj\Debug\Assembly-CSharp-firstpass.pdb
-D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\obj\Debug\UnityVS.LudumDareApril2015.CSharp.Plugins.csprojResolveAssemblyReference.cache
