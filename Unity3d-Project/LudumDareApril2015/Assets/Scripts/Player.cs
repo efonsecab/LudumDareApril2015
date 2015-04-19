@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public EnemisController EnemyController;
     private int InitialHP;
     public Slider PlayerHealhPointsBar;
+    public int Speed = 1;
     // Use this for initialization
     void Start()
     {
@@ -23,6 +24,8 @@ public class Player : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
+        if (GameController.CurrentGamePlayStatus != GameController.GameplayStatus.Play)
+            return;
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         Vector3 direction = this.transform.localScale;
@@ -47,7 +50,7 @@ public class Player : MonoBehaviour
         dest.x += h;
         dest.z += v;
         //Debug.LogFormat("Moving To: {0},{1}, {2}", dest.x, dest.y, dest.z);
-        this.transform.position = Vector3.MoveTowards(this.transform.position, dest, 0.1f);
+        this.transform.position = Vector3.MoveTowards(this.transform.position, dest, Speed * Time.deltaTime);
         var fwd = transform.rotation * Vector3.forward;
         Debug.DrawRay(this.transform.position, fwd, Color.black);
         if (Input.GetKeyUp(KeyCode.Z))
@@ -70,7 +73,9 @@ public class Player : MonoBehaviour
                             enemyCurrentHP = 0;
                         enemyHungerComponent.CurrentStats.HealthPoints = enemyCurrentHP;
                         if (enemyHungerComponent.CurrentStats.HealthPoints == 0)
+                        {
                             this.EnemyController.DefeatEnemy(enemyHungerComponent);
+                        }
                     }
                 }
             }

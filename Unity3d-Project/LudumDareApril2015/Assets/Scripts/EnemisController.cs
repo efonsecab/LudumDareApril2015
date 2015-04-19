@@ -23,6 +23,8 @@ public class EnemisController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (GameController.CurrentGamePlayStatus != GameController.GameplayStatus.Play)
+            return;
         if (Time.time > this.lastTimeEnemySpawned + BaseSpawnInternal && this.SpawnedEnemies.Count < this.MaxAllowedEnemiesInScene)
         {
             this.lastTimeEnemySpawned = Time.time;
@@ -46,6 +48,7 @@ public class EnemisController : MonoBehaviour {
             this.PlayerScoreSystem.AddToScore(enemyHunger.PointsPerDefeat);
             GameObject.Destroy(enemyHunger.gameObject);
             this.SpawnedEnemies.RemoveAt(indexOfEnemy);
+            this.PlayerScoreSystem.EnemiesDefeated++;
         }
     }
 }

@@ -32,6 +32,8 @@ public class EnemyHunger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (GameController.CurrentGamePlayStatus != GameController.GameplayStatus.Play)
+            return;
         if (this.Target != null)
         {
             if (this.Target.transform.position.x < this.transform.position.x)
@@ -84,6 +86,7 @@ public class EnemyHunger : MonoBehaviour {
                 this.PlayerComponent.CurrentStats.HealthPoints = currentPlayerHP;
                 if (this.PlayerComponent.CurrentStats.HealthPoints == 0)
                 {
+
                     Debug.Log("Player lost");
                     Time.timeScale = 0;
                 }

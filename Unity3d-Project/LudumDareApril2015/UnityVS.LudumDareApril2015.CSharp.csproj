@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\EnemisController.cs" />
     <Compile Include="Assets\Scripts\EnemyHunger.cs" />
+    <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\ScoreSystem.cs" />
     <Compile Include="Assets\Scripts\Stats.cs" />
