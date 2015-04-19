@@ -1,0 +1,501 @@
+fileFormatVersion: 2
+guid: ff5cc8942e40495499b8600d12a7e530
+timeCreated: 1429481221
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: npc1_geo_grp
+    100004: npc1_joints_grp
+    100006: npc_geo_boca
+    100008: npc_geo_brazo_der
+    100010: npc_geo_brazo_izq
+    100012: npc_geo_cabeza
+    100014: npc_geo_ceja_der
+    100016: npc_geo_ceja_izq
+    100018: npc_geo_cuello
+    100020: npc_geo_ojo_der
+    100022: npc_geo_ojo_izq
+    100024: npc_geo_pierna_der
+    100026: npc_geo_pierna_izq
+    100028: npc_geo_prop1
+    100030: npc_geo_prop2
+    100032: npc_geo_prop3
+    100034: npc_geo_prop4
+    100036: npc_geo_prop5
+    100038: npc_geo_prop6
+    100040: npc_geo_torso
+    100042: npc_joint_boca1
+    100044: npc_joint_boca2
+    100046: npc_joint_boca3
+    100048: npc_joint_boca4
+    100050: npc_joint_boca5
+    100052: npc_joint_boca6
+    100054: npc_joint_boca7
+    100056: npc_joint_boca8
+    100058: npc_joint_boca9
+    100060: npc_joint_cabeza
+    100062: npc_joint_cabeza_pta
+    100064: npc_joint_cadera
+    100066: npc_joint_ceja_der
+    100068: npc_joint_ceja_izq
+    100070: npc_joint_codo_der
+    100072: npc_joint_codo_izq
+    100074: npc_joint_columna1
+    100076: npc_joint_columna2
+    100078: npc_joint_columna3
+    100080: npc_joint_columna4
+    100082: npc_joint_columna5
+    100084: npc_joint_columna6
+    100086: npc_joint_columna7
+    100088: npc_joint_cuello
+    100090: npc_joint_hombro_der
+    100092: npc_joint_hombro_izq
+    100094: npc_joint_mano_der
+    100096: npc_joint_mano_izq
+    100098: npc_joint_muslo_der
+    100100: npc_joint_muslo_izq
+    100102: npc_joint_ojo_der1
+    100104: npc_joint_ojo_der2
+    100106: npc_joint_ojo_izq1
+    100108: npc_joint_ojo_izq2
+    100110: npc_joint_pie_der
+    100112: npc_joint_pie_izq
+    100114: npc_joint_prop_a1
+    100116: npc_joint_prop_a2
+    100118: npc_joint_prop_a3
+    100120: npc_joint_prop_b1
+    100122: npc_joint_prop_b2
+    100124: npc_joint_prop_b3
+    100126: npc_joint_prop_b4
+    100128: npc_joint_prop_b5
+    100130: npc_joint_prop_c1
+    100132: npc_joint_prop_c2
+    100134: npc_joint_prop_c3
+    100136: npc_joint_prop_c4
+    100138: npc_joint_prop_c5
+    100140: npc_joint_prop_c6
+    100142: npc_joint_prop_c7
+    100144: npc_joint_prop_c8
+    100146: npc_joint_prop_d1
+    100148: npc_joint_prop_d2
+    100150: npc_joint_prop_d3
+    100152: npc_joint_prop_d4
+    100154: npc_joint_prop_d5
+    100156: npc_joint_prop_d6
+    100158: npc_joint_prop_d7
+    100160: npc_joint_prop_d8
+    100162: npc_joint_prop_e1
+    100164: npc_joint_prop_e2
+    100166: npc_joint_prop_f1
+    100168: npc_joint_prop_f2
+    100170: npc_joint_prop_f3
+    100172: npc_joint_prop_f4
+    100174: npc_joint_prop_f5
+    100176: npc_joint_raiz
+    100178: npc_joint_rodilla_der
+    100180: npc_joint_rodilla_izq
+    100182: npc_joint_tobillo_der
+    100184: npc_joint_tobillo_izq
+    400000: //RootNode
+    400002: npc1_geo_grp
+    400004: npc1_joints_grp
+    400006: npc_geo_boca
+    400008: npc_geo_brazo_der
+    400010: npc_geo_brazo_izq
+    400012: npc_geo_cabeza
+    400014: npc_geo_ceja_der
+    400016: npc_geo_ceja_izq
+    400018: npc_geo_cuello
+    400020: npc_geo_ojo_der
+    400022: npc_geo_ojo_izq
+    400024: npc_geo_pierna_der
+    400026: npc_geo_pierna_izq
+    400028: npc_geo_prop1
+    400030: npc_geo_prop2
+    400032: npc_geo_prop3
+    400034: npc_geo_prop4
+    400036: npc_geo_prop5
+    400038: npc_geo_prop6
+    400040: npc_geo_torso
+    400042: npc_joint_boca1
+    400044: npc_joint_boca2
+    400046: npc_joint_boca3
+    400048: npc_joint_boca4
+    400050: npc_joint_boca5
+    400052: npc_joint_boca6
+    400054: npc_joint_boca7
+    400056: npc_joint_boca8
+    400058: npc_joint_boca9
+    400060: npc_joint_cabeza
+    400062: npc_joint_cabeza_pta
+    400064: npc_joint_cadera
+    400066: npc_joint_ceja_der
+    400068: npc_joint_ceja_izq
+    400070: npc_joint_codo_der
+    400072: npc_joint_codo_izq
+    400074: npc_joint_columna1
+    400076: npc_joint_columna2
+    400078: npc_joint_columna3
+    400080: npc_joint_columna4
+    400082: npc_joint_columna5
+    400084: npc_joint_columna6
+    400086: npc_joint_columna7
+    400088: npc_joint_cuello
+    400090: npc_joint_hombro_der
+    400092: npc_joint_hombro_izq
+    400094: npc_joint_mano_der
+    400096: npc_joint_mano_izq
+    400098: npc_joint_muslo_der
+    400100: npc_joint_muslo_izq
+    400102: npc_joint_ojo_der1
+    400104: npc_joint_ojo_der2
+    400106: npc_joint_ojo_izq1
+    400108: npc_joint_ojo_izq2
+    400110: npc_joint_pie_der
+    400112: npc_joint_pie_izq
+    400114: npc_joint_prop_a1
+    400116: npc_joint_prop_a2
+    400118: npc_joint_prop_a3
+    400120: npc_joint_prop_b1
+    400122: npc_joint_prop_b2
+    400124: npc_joint_prop_b3
+    400126: npc_joint_prop_b4
+    400128: npc_joint_prop_b5
+    400130: npc_joint_prop_c1
+    400132: npc_joint_prop_c2
+    400134: npc_joint_prop_c3
+    400136: npc_joint_prop_c4
+    400138: npc_joint_prop_c5
+    400140: npc_joint_prop_c6
+    400142: npc_joint_prop_c7
+    400144: npc_joint_prop_c8
+    400146: npc_joint_prop_d1
+    400148: npc_joint_prop_d2
+    400150: npc_joint_prop_d3
+    400152: npc_joint_prop_d4
+    400154: npc_joint_prop_d5
+    400156: npc_joint_prop_d6
+    400158: npc_joint_prop_d7
+    400160: npc_joint_prop_d8
+    400162: npc_joint_prop_e1
+    400164: npc_joint_prop_e2
+    400166: npc_joint_prop_f1
+    400168: npc_joint_prop_f2
+    400170: npc_joint_prop_f3
+    400172: npc_joint_prop_f4
+    400174: npc_joint_prop_f5
+    400176: npc_joint_raiz
+    400178: npc_joint_rodilla_der
+    400180: npc_joint_rodilla_izq
+    400182: npc_joint_tobillo_der
+    400184: npc_joint_tobillo_izq
+    4300000: npc_geo_cabeza
+    4300002: npc_geo_cuello
+    4300004: npc_geo_torso
+    4300006: npc_geo_pierna_der
+    4300008: npc_geo_brazo_der
+    4300010: npc_geo_brazo_izq
+    4300012: npc_geo_pierna_izq
+    4300014: npc_geo_prop1
+    4300016: npc_geo_prop2
+    4300018: npc_geo_prop3
+    4300020: npc_geo_prop4
+    4300022: npc_geo_prop5
+    4300024: npc_geo_prop6
+    4300026: npc_geo_ojo_der
+    4300028: npc_geo_boca
+    4300030: npc_geo_ojo_izq
+    4300032: npc_geo_ceja_der
+    4300034: npc_geo_ceja_izq
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: npc_geo_boca
+    13700002: npc_geo_brazo_der
+    13700004: npc_geo_brazo_izq
+    13700006: npc_geo_cabeza
+    13700008: npc_geo_ceja_der
+    13700010: npc_geo_ceja_izq
+    13700012: npc_geo_cuello
+    13700014: npc_geo_ojo_der
+    13700016: npc_geo_ojo_izq
+    13700018: npc_geo_pierna_der
+    13700020: npc_geo_pierna_izq
+    13700022: npc_geo_prop1
+    13700024: npc_geo_prop2
+    13700026: npc_geo_prop3
+    13700028: npc_geo_prop4
+    13700030: npc_geo_prop5
+    13700032: npc_geo_prop6
+    13700034: npc_geo_torso
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: npc1_geo_grp
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_boca
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_brazo_der
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_brazo_izq
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_cabeza
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_ceja_der
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_ceja_izq
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_cuello
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_ojo_der
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_ojo_izq
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_pierna_der
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_pierna_izq
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_prop1
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_prop2
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_prop3
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_prop4
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_prop5
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_prop6
+        weight: 1
+      - path: npc1_geo_grp/npc_geo_torso
+        weight: 1
+      - path: npc1_joints_grp
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_boca1
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_boca2
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_boca3
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_boca4
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_boca5
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_boca6
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_boca7
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_boca8
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_boca9
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_cabeza_pta
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_ceja_der
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_ceja_izq
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_ojo_der1
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_ojo_der2
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_ojo_izq1
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_columna7/npc_joint_cuello/npc_joint_cabeza/npc_joint_ojo_izq2
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_hombro_der
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_hombro_der/npc_joint_codo_der
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_hombro_der/npc_joint_codo_der/npc_joint_mano_der
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_hombro_izq
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_hombro_izq/npc_joint_codo_izq
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_columna1/npc_joint_columna2/npc_joint_columna3/npc_joint_columna4/npc_joint_columna5/npc_joint_columna6/npc_joint_hombro_izq/npc_joint_codo_izq/npc_joint_mano_izq
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_muslo_der
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_muslo_der/npc_joint_rodilla_der
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_muslo_der/npc_joint_rodilla_der/npc_joint_tobillo_der
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_muslo_der/npc_joint_rodilla_der/npc_joint_tobillo_der/npc_joint_pie_der
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_muslo_izq
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_muslo_izq/npc_joint_rodilla_izq
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_muslo_izq/npc_joint_rodilla_izq/npc_joint_tobillo_izq
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_cadera/npc_joint_muslo_izq/npc_joint_rodilla_izq/npc_joint_tobillo_izq/npc_joint_pie_izq
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_a1
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_a1/npc_joint_prop_a2
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_a1/npc_joint_prop_a2/npc_joint_prop_a3
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_b1
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_b1/npc_joint_prop_b2
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_b1/npc_joint_prop_b2/npc_joint_prop_b3
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_b1/npc_joint_prop_b2/npc_joint_prop_b3/npc_joint_prop_b4
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_b1/npc_joint_prop_b2/npc_joint_prop_b3/npc_joint_prop_b4/npc_joint_prop_b5
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_c1
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_c1/npc_joint_prop_c2
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_c1/npc_joint_prop_c2/npc_joint_prop_c3
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_c1/npc_joint_prop_c2/npc_joint_prop_c3/npc_joint_prop_c4
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_c1/npc_joint_prop_c2/npc_joint_prop_c3/npc_joint_prop_c4/npc_joint_prop_c5
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_c1/npc_joint_prop_c2/npc_joint_prop_c3/npc_joint_prop_c4/npc_joint_prop_c5/npc_joint_prop_c6
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_c1/npc_joint_prop_c2/npc_joint_prop_c3/npc_joint_prop_c4/npc_joint_prop_c5/npc_joint_prop_c6/npc_joint_prop_c7
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_c1/npc_joint_prop_c2/npc_joint_prop_c3/npc_joint_prop_c4/npc_joint_prop_c5/npc_joint_prop_c6/npc_joint_prop_c7/npc_joint_prop_c8
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_d1
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_d1/npc_joint_prop_d2
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_d1/npc_joint_prop_d2/npc_joint_prop_d3
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_d1/npc_joint_prop_d2/npc_joint_prop_d3/npc_joint_prop_d4
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_d1/npc_joint_prop_d2/npc_joint_prop_d3/npc_joint_prop_d4/npc_joint_prop_d5
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_d1/npc_joint_prop_d2/npc_joint_prop_d3/npc_joint_prop_d4/npc_joint_prop_d5/npc_joint_prop_d6
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_d1/npc_joint_prop_d2/npc_joint_prop_d3/npc_joint_prop_d4/npc_joint_prop_d5/npc_joint_prop_d6/npc_joint_prop_d7
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_d1/npc_joint_prop_d2/npc_joint_prop_d3/npc_joint_prop_d4/npc_joint_prop_d5/npc_joint_prop_d6/npc_joint_prop_d7/npc_joint_prop_d8
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_e1
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_e1/npc_joint_prop_e2
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_f1
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_f1/npc_joint_prop_f2
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_f1/npc_joint_prop_f2/npc_joint_prop_f3
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_f1/npc_joint_prop_f4
+        weight: 1
+      - path: npc1_joints_grp/npc_joint_raiz/npc_joint_prop_f1/npc_joint_prop_f4/npc_joint_prop_f5
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

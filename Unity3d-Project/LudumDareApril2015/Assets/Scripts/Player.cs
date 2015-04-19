@@ -3,13 +3,13 @@ using System.Collections;
 using UnityEngine.UI;
 using System.Linq;
 
+public enum LookingTo
+{
+    Left,
+    Right
+}
 public class Player : MonoBehaviour
 {
-    public enum LookingTo
-    {
-        Left,
-        Right
-    }
     public LookingTo CurrentLookingTo;
     public Stats CurrentStats;
     public int AttackDamage = 10;

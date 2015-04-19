@@ -2,8 +2,10 @@
 using System.Collections;
 using System.Linq;
 
-public class EnemyHunger : MonoBehaviour {
+public class EnemyHunger : MonoBehaviour
+{
     //[SerializeField]
+    public LookingTo CurrentLookingTo;
     public Stats CurrentStats;
     public int Speed = 1;
     public GameObject Target;
@@ -16,15 +18,17 @@ public class EnemyHunger : MonoBehaviour {
     private NavMeshAgent NavigationAgent;
     public bool IsValidTarget = false;
     private float DistanceToTarget;
-	// Use this for initialization
-	void Start () {
+    public bool CanAttack = false;
+    // Use this for initialization
+    void Start()
+    {
         this.lastTimeAttacked = Time.time;
         if (this.Target != null)
         {
             this.PlayerComponent = this.Target.GetComponent<Player>();
             //SetNavigationAgent();
         }
-	}
+    }
 
     private void SetNavigationAgent()
     {
@@ -36,24 +40,27 @@ public class EnemyHunger : MonoBehaviour {
     {
         return this.DistanceToTarget;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update()
+    {
         if (GameController.CurrentGamePlayStatus != GameController.GameplayStatus.Play)
             return;
         if (this.Target != null)
         {
-            if (this.Target.transform.position.x < this.transform.position.x)
+            if (this.Target.transform.position.x < this.transform.position.x && this.CurrentLookingTo != LookingTo.Left)
             {
-                this.transform.localEulerAngles = new Vector3(0,-90,0);
+                this.CurrentLookingTo = LookingTo.Left;
+                this.transform.localEulerAngles = new Vector3(0, 0, 0);
             }
             else
-                if (this.Target.transform.position.x > this.transform.position.x)
+                if (this.Target.transform.position.x > this.transform.position.x && this.CurrentLookingTo != LookingTo.Right)
                 {
-                    this.transform.localEulerAngles = new Vector3(0, 90, 0);
+                    this.CurrentLookingTo = LookingTo.Right;
+                    this.transform.localEulerAngles = new Vector3(0, 180, 0);
                 }
-            var fwd = transform.rotation * Vector3.forward;
-            Debug.DrawRay(this.transform.position, fwd, Color.yellow);
+            //var fwd = transform.rotation * Vector3.forward;
+            //Debug.DrawRay(this.transform.position, fwd, Color.yellow);
             //Ray newRay = new Ray(this.transform.position, fwd);
             float distanceToPlayer = Vector3.Distance(this.gameObject.transform.position, this.Target.transform.position);
             this.DistanceToTarget = distanceToPlayer;
@@ -61,13 +68,35 @@ public class EnemyHunger : MonoBehaviour {
             {
                 NavigateToPlayer();
             }
-            if (Time.time > (this.lastTimeAttacked + AttackInterval) && Mathf.CeilToInt(distanceToPlayer) == MinimumAllowedDistance)
+            if (Time.time > (this.lastTimeAttacked + AttackInterval) && Mathf.Floor(distanceToPlayer) == MinimumAllowedDistance)
             {
                 DamagePlayer();
                 this.lastTimeAttacked = Time.time;
             }
         }
-	}
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Debug.Log("Player trigger");
+            this.CanAttack = true;
+        }
+        Debug.LogFormat("Collided withhhh: {0}", other.gameObject.name);
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            Debug.Log("Out of player reach");
+            this.CanAttack = false;
+        }
+    }
+
+
+
 
     private void NavigateToPlayer()
     {
@@ -77,29 +106,30 @@ public class EnemyHunger : MonoBehaviour {
 
     private void DamagePlayer()
     {
-        var fwd = transform.rotation * Vector3.forward;
-        Ray newRay = new Ray(this.transform.position, fwd);
-        RaycastHit raycastHitInfo = new RaycastHit();
-        Collider[] theColliders = Physics.OverlapSphere(this.transform.position, 1);
-        bool bHitPlayer = (theColliders != null && theColliders.Length > 0 && theColliders.Where(p => p.gameObject != null && p.gameObject.tag == "Player").Count() > 0);
-        bool willCollide = Physics.Raycast(newRay, out raycastHitInfo, (float)this.MinimumAllowedDistance);
-        if (willCollide || bHitPlayer)
+        //var fwd = transform.rotation * Vector3.forward;
+        //Ray newRay = new Ray(this.transform.position, fwd);
+        //RaycastHit raycastHitInfo = new RaycastHit();
+        //Collider[] theColliders = Physics.OverlapSphere(this.transform.position, 1);
+        //bool bHitPlayer = (theColliders != null && theColliders.Length > 0 && theColliders.Where(p => p.gameObject != null && p.gameObject.tag == "Player").Count() > 0);
+        //bool willCollide = Physics.Raycast(newRay, out raycastHitInfo, (float)this.MinimumAllowedDistance);
+        //if (willCollide || bHitPlayer)
+        //{
+        //    if ( (raycastHitInfo.collider != null && raycastHitInfo.collider.gameObject != null && raycastHitInfo.collider.gameObject.tag == "Player") || bHitPlayer)
+        //    {
+        int currentPlayerHP = this.PlayerComponent.CurrentStats.HealthPoints;
+        currentPlayerHP -= this.AttackDamage;
+        if (currentPlayerHP <= 0)
+            currentPlayerHP = 0;
+        this.PlayerComponent.CurrentStats.HealthPoints = currentPlayerHP;
+        if (this.PlayerComponent.CurrentStats.HealthPoints == 0)
         {
-            if ( (raycastHitInfo.collider != null && raycastHitInfo.collider.gameObject != null && raycastHitInfo.collider.gameObject.tag == "Player") || bHitPlayer)
-            {
-                int currentPlayerHP = this.PlayerComponent.CurrentStats.HealthPoints;
-                currentPlayerHP -= this.AttackDamage;
-                if (currentPlayerHP <= 0)
-                    currentPlayerHP = 0;
-                this.PlayerComponent.CurrentStats.HealthPoints = currentPlayerHP;
-                if (this.PlayerComponent.CurrentStats.HealthPoints == 0)
-                {
 
-                    Debug.Log("Player lost");
-                    Time.timeScale = 0;
-                }
-                Debug.Log("Attacked");
-            }
+            Debug.Log("Player lost");
+            Time.timeScale = 0;
         }
+        Debug.Log("Attacked");
+        //    }
+        //}
     }
+
 }
