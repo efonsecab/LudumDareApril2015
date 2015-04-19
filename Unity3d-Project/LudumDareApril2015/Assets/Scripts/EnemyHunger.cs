@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Linq;
 
 public class EnemyHunger : MonoBehaviour {
     //[SerializeField]
@@ -69,10 +70,12 @@ public class EnemyHunger : MonoBehaviour {
         var fwd = transform.rotation * Vector3.forward;
         Ray newRay = new Ray(this.transform.position, fwd);
         RaycastHit raycastHitInfo = new RaycastHit();
+        Collider[] theColliders = Physics.OverlapSphere(this.transform.position, 1);
+        bool bHitPlayer = (theColliders != null && theColliders.Length > 0 && theColliders.Where(p => p.gameObject != null && p.gameObject.tag == "Player").Count() > 0);
         bool willCollide = Physics.Raycast(newRay, out raycastHitInfo, (float)this.MinimumAllowedDistance);
-        if (willCollide)
+        if (willCollide || bHitPlayer)
         {
-            if (raycastHitInfo.collider != null && raycastHitInfo.collider.gameObject != null && raycastHitInfo.collider.gameObject.tag == "Player")
+            if ( (raycastHitInfo.collider != null && raycastHitInfo.collider.gameObject != null && raycastHitInfo.collider.gameObject.tag == "Player") || bHitPlayer)
             {
                 int currentPlayerHP = this.PlayerComponent.CurrentStats.HealthPoints;
                 currentPlayerHP -= this.AttackDamage;
