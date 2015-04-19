@@ -1,0 +1,10 @@
+Mover: Teclas Arriba, Abajo, Izquierda, Derecha
+Atacar: Presionar Z, "mirando" hacia el enemigo al que se desea atacar. Nota: Actualmente debe posicionar al enemigo en un ángulo de 0 grados. 
+Pendiente hacer una detección en cono.
+
+El juego se encuentra en:
+\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Builds\Windows\BuildPrueba.exe
+
+
+Hacer screenshots de sus score en:
+\LudumDareApril2015\TeamScoreTest
