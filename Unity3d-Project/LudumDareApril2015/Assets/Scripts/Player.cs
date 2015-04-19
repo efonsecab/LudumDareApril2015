@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Linq;
 
 public class Player : MonoBehaviour
 {
@@ -56,39 +57,53 @@ public class Player : MonoBehaviour
         Debug.DrawRay(this.transform.position, fwd, Color.black);
         if (Input.GetKeyUp(KeyCode.Z))
         {
+            EnemyHunger closestEnemy = this.EnemyController.SpawnedEnemies.OrderBy(d => d.GetDistanceToTarget()).FirstOrDefault();
+            if (closestEnemy != null && closestEnemy.IsValidTarget)
+            {
+                ApplyAttack(fwd, closestEnemy.gameObject, closestEnemy);
+            }
             Ray newRay = new Ray(this.transform.position, fwd);
             RaycastHit raycastHitInfo = new RaycastHit();
-            bool willCollide = Physics.Raycast(newRay, out raycastHitInfo);
-            if (willCollide)
-            {
-                if (raycastHitInfo.collider != null)
-                {
-                    var collidedGameObject = raycastHitInfo.collider.gameObject;
-                    EnemyHunger enemyHungerComponent = collidedGameObject.GetComponent<EnemyHunger>();
-                    if (enemyHungerComponent != null)
-                    {
-                        Rigidbody enemyRigidBody = collidedGameObject.GetComponent<Rigidbody>();
-                        enemyRigidBody.AddForce(fwd * ImpulseForceOnEnemy, ForceMode.Impulse);
-                        Debug.LogFormat("Can attack: {0}", collidedGameObject.name);
-                        int enemyCurrentHP = enemyHungerComponent.CurrentStats.HealthPoints;
-                        enemyCurrentHP -= this.AttackDamage;
-                        if (enemyCurrentHP < 0)
-                            enemyCurrentHP = 0;
-                        enemyHungerComponent.CurrentStats.HealthPoints = enemyCurrentHP;
-                        if (enemyHungerComponent.CurrentStats.HealthPoints == 0)
-                        {
-                            this.EnemyController.DefeatEnemy(enemyHungerComponent);
-                        }
-                    }
-                }
-            }
-            else
-                Debug.Log("Nothing in front");
-            Debug.DrawRay(this.transform.position, fwd, Color.red);
+            //AttackByRaycasting(ref fwd, ref newRay, ref raycastHitInfo);
             //Debug.LogFormat("{0},{1}, {2}", fwd.x, fwd.y, fwd.z);
             //this.transform.position += fwd;
         }
 	}
+
+    private void AttackByRaycasting(ref Vector3 fwd, ref Ray newRay, ref RaycastHit raycastHitInfo)
+    {
+        bool willCollide = Physics.Raycast(newRay, out raycastHitInfo);
+        if (willCollide)
+        {
+            if (raycastHitInfo.collider != null)
+            {
+                var collidedGameObject = raycastHitInfo.collider.gameObject;
+                EnemyHunger enemyHungerComponent = collidedGameObject.GetComponent<EnemyHunger>();
+                ApplyAttack(fwd, collidedGameObject, enemyHungerComponent);
+            }
+        }
+        else
+            Debug.Log("Nothing in front");
+    }
+
+    private void ApplyAttack(Vector3 fwd, GameObject collidedGameObject, EnemyHunger enemyHungerComponent)
+    {
+        if (enemyHungerComponent != null)
+        {
+            Rigidbody enemyRigidBody = collidedGameObject.GetComponent<Rigidbody>();
+            enemyRigidBody.AddForce(fwd * ImpulseForceOnEnemy, ForceMode.Impulse);
+            Debug.LogFormat("Can attack: {0}", collidedGameObject.name);
+            int enemyCurrentHP = enemyHungerComponent.CurrentStats.HealthPoints;
+            enemyCurrentHP -= this.AttackDamage;
+            if (enemyCurrentHP < 0)
+                enemyCurrentHP = 0;
+            enemyHungerComponent.CurrentStats.HealthPoints = enemyCurrentHP;
+            if (enemyHungerComponent.CurrentStats.HealthPoints == 0)
+            {
+                this.EnemyController.DefeatEnemy(enemyHungerComponent);
+            }
+        }
+    }
 
     void OnGUI()
     {

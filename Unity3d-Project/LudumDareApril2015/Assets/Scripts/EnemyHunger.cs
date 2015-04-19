@@ -15,6 +15,7 @@ public class EnemyHunger : MonoBehaviour {
     public int PointsPerDefeat = 10;
     private NavMeshAgent NavigationAgent;
     public bool IsValidTarget = false;
+    private float DistanceToTarget;
 	// Use this for initialization
 	void Start () {
         this.lastTimeAttacked = Time.time;
@@ -29,6 +30,11 @@ public class EnemyHunger : MonoBehaviour {
     {
         this.NavigationAgent = this.GetComponent<NavMeshAgent>();
         this.NavigationAgent.SetDestination(this.Target.transform.position);
+    }
+
+    public float GetDistanceToTarget()
+    {
+        return this.DistanceToTarget;
     }
 	
 	// Update is called once per frame
@@ -50,6 +56,7 @@ public class EnemyHunger : MonoBehaviour {
             Debug.DrawRay(this.transform.position, fwd, Color.yellow);
             //Ray newRay = new Ray(this.transform.position, fwd);
             float distanceToPlayer = Vector3.Distance(this.gameObject.transform.position, this.Target.transform.position);
+            this.DistanceToTarget = distanceToPlayer;
             if (distanceToPlayer > this.MinimumAllowedDistance)
             {
                 NavigateToPlayer();
