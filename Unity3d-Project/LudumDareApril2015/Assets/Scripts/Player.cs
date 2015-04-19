@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
         if (h < 0 && this.CurrentLookingTo != LookingTo.Left)
         {
             this.CurrentLookingTo = LookingTo.Left;
-            this.gameObject.GetComponent<Renderer>().material.color = Color.blue;
+            //this.gameObject.GetComponent<Renderer>().material.color = Color.blue;
             transform.localEulerAngles = new Vector3(0, -90, 0);
             //direction = new Vector3(this.transform.localScale.x*-1, 1, 1);
             //this.transform.localScale = direction;
@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
             if (h > 00 && this.CurrentLookingTo != LookingTo.Right)
             {
                 this.CurrentLookingTo = LookingTo.Right;
-                this.gameObject.GetComponent<Renderer>().material.color = Color.red;
+                //this.gameObject.GetComponent<Renderer>().material.color = Color.red;
                 transform.localEulerAngles = new Vector3(0, 90, 0);
                 //direction = new Vector3(this.transform.localScale.x*-1,1,1);
                 //this.transform.localScale = direction;
