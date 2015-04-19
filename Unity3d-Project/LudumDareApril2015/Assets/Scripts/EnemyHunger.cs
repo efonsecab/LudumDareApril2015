@@ -14,6 +14,7 @@ public class EnemyHunger : MonoBehaviour {
     private Player PlayerComponent;
     public int PointsPerDefeat = 10;
     private NavMeshAgent NavigationAgent;
+    public bool IsValidTarget = false;
 	// Use this for initialization
 	void Start () {
         this.lastTimeAttacked = Time.time;

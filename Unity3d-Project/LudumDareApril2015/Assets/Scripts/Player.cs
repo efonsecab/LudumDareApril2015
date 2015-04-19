@@ -16,6 +16,7 @@ public class Player : MonoBehaviour
     private int InitialHP;
     public Slider PlayerHealhPointsBar;
     public int Speed = 1;
+    public int ImpulseForceOnEnemy = 10;
     // Use this for initialization
     void Start()
     {
@@ -66,6 +67,8 @@ public class Player : MonoBehaviour
                     EnemyHunger enemyHungerComponent = collidedGameObject.GetComponent<EnemyHunger>();
                     if (enemyHungerComponent != null)
                     {
+                        Rigidbody enemyRigidBody = collidedGameObject.GetComponent<Rigidbody>();
+                        enemyRigidBody.AddForce(fwd * ImpulseForceOnEnemy, ForceMode.Impulse);
                         Debug.LogFormat("Can attack: {0}", collidedGameObject.name);
                         int enemyCurrentHP = enemyHungerComponent.CurrentStats.HealthPoints;
                         enemyCurrentHP -= this.AttackDamage;
@@ -92,4 +95,34 @@ public class Player : MonoBehaviour
         float currentHPPercentage = (float)this.CurrentStats.HealthPoints / (float)this.InitialHP;
         this.PlayerHealhPointsBar.value = currentHPPercentage;
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject != null)
+        {
+            EnemyHunger enemyHungerComponent = other.gameObject.GetComponent<EnemyHunger>();
+            Debug.LogFormat("Collided: {0}", other.name);
+            if (enemyHungerComponent != null)
+            {
+                this.EnemyController.SetValidTarget(enemyHungerComponent, true);
+            }
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject != null)
+        {
+            EnemyHunger enemyHungerComponent = other.gameObject.GetComponent<EnemyHunger>();
+            Debug.LogFormat("Collided: {0}", other.name);
+            if (enemyHungerComponent != null)
+            {
+                this.EnemyController.SetValidTarget(enemyHungerComponent, false);
+            }
+        }
+    }
+
+
+
+
 }

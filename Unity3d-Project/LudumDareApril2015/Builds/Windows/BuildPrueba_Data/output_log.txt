@@ -14,7 +14,7 @@ Platform assembly: D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Pr
 Loading D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Builds\Windows\BuildPrueba_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Builds\Windows\BuildPrueba_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Builds\Windows\BuildPrueba_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.046 seconds
+- Completed reload, in  0.045 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
@@ -22,8 +22,24 @@ desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 Platform assembly: D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Builds\Windows\BuildPrueba_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Builds\Windows\BuildPrueba_Data\Managed\System.dll (this message is harmless)
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 3870 -> priority: 1 
-  Thread -> id: 3394 -> priority: 1 
+  Thread -> id: 2410 -> priority: 1 
+  Thread -> id: 2524 -> priority: 1 
+Attacked
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyHunger:DamagePlayer() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:93)
+EnemyHunger:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:58)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemyHunger.cs Line: 93)
+
+Can attack: Enemy_Hunger(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Debug:LogFormat(String, Object[])
+Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
+
 Attacked
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
@@ -48,15 +64,7 @@ Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-P
  
 (Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
 
-Can attack: Enemy_Hunger(Clone)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.Debug:LogFormat(String, Object[])
-Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
- 
-(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
-
-Index of enemy: 0
+Index of enemy: 1
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
 UnityEngine.Debug:LogFormat(String, Object[])
@@ -73,39 +81,6 @@ Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-P
  
 (Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
 
-Attacked
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-EnemyHunger:DamagePlayer() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:93)
-EnemyHunger:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:58)
- 
-(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemyHunger.cs Line: 93)
-
-Can attack: Enemy_Hunger(Clone)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.Debug:LogFormat(String, Object[])
-Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
- 
-(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
-
-Can attack: Enemy_Hunger(Clone)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.Debug:LogFormat(String, Object[])
-Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
- 
-(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
-
-Index of enemy: 0
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.Debug:LogFormat(String, Object[])
-EnemisController:DefeatEnemy(EnemyHunger) (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemisController.cs:45)
-Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:77)
- 
-(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemisController.cs Line: 45)
-
 Can attack: Enemy_Hunger(Clone)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
@@ -121,14 +96,6 @@ EnemyHunger:DamagePlayer() (at D:\Eduardo\Game Development\GIT\LudumDareApril201
 EnemyHunger:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:58)
  
 (Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemyHunger.cs Line: 93)
-
-Can attack: Enemy_Hunger(Clone)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.Debug:LogFormat(String, Object[])
-Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
- 
-(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
 
 Can attack: Enemy_Hunger(Clone)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
@@ -212,14 +179,6 @@ Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-P
  
 (Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
 
-Attacked
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-EnemyHunger:DamagePlayer() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:93)
-EnemyHunger:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:58)
- 
-(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemyHunger.cs Line: 93)
-
 Can attack: Enemy_Hunger(Clone)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
@@ -236,14 +195,6 @@ EnemisController:DefeatEnemy(EnemyHunger) (at D:\Eduardo\Game Development\GIT\Lu
 Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:77)
  
 (Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemisController.cs Line: 45)
-
-Attacked
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-EnemyHunger:DamagePlayer() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:93)
-EnemyHunger:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:58)
- 
-(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemyHunger.cs Line: 93)
 
 Can attack: Enemy_Hunger(Clone)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
@@ -286,14 +237,6 @@ Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-P
  
 (Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
 
-Can attack: Enemy_Hunger(Clone)
-UnityEngine.Debug:Internal_Log(Int32, String, Object)
-UnityEngine.Debug:Log(Object)
-UnityEngine.Debug:LogFormat(String, Object[])
-Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
- 
-(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
-
 Attacked
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
 UnityEngine.Debug:Log(Object)
@@ -301,6 +244,14 @@ EnemyHunger:DamagePlayer() (at D:\Eduardo\Game Development\GIT\LudumDareApril201
 EnemyHunger:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:58)
  
 (Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemyHunger.cs Line: 93)
+
+Can attack: Enemy_Hunger(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Debug:LogFormat(String, Object[])
+Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
 
 Can attack: Enemy_Hunger(Clone)
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
@@ -334,6 +285,80 @@ UnityEngine.Debug:LogFormat(String, Object[])
 Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
  
 (Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
+
+Can attack: Enemy_Hunger(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Debug:LogFormat(String, Object[])
+Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
+
+Attacked
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyHunger:DamagePlayer() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:93)
+EnemyHunger:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:58)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemyHunger.cs Line: 93)
+
+Can attack: Enemy_Hunger(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Debug:LogFormat(String, Object[])
+Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
+
+Index of enemy: 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Debug:LogFormat(String, Object[])
+EnemisController:DefeatEnemy(EnemyHunger) (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemisController.cs:45)
+Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:77)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemisController.cs Line: 45)
+
+Can attack: Enemy_Hunger(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Debug:LogFormat(String, Object[])
+Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
+
+Attacked
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+EnemyHunger:DamagePlayer() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:93)
+EnemyHunger:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:58)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemyHunger.cs Line: 93)
+
+Can attack: Enemy_Hunger(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Debug:LogFormat(String, Object[])
+Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
+
+Can attack: Enemy_Hunger(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Debug:LogFormat(String, Object[])
+Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
+
+Index of enemy: 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Debug:LogFormat(String, Object[])
+EnemisController:DefeatEnemy(EnemyHunger) (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemisController.cs:45)
+Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:77)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemisController.cs Line: 45)
 
 Player lost
 UnityEngine.Debug:Internal_Log(Int32, String, Object)
@@ -350,4 +375,37 @@ EnemyHunger:DamagePlayer() (at D:\Eduardo\Game Development\GIT\LudumDareApril201
 EnemyHunger:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemyHunger.cs:58)
  
 (Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemyHunger.cs Line: 93)
+
+Can attack: Enemy_Hunger(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Debug:LogFormat(String, Object[])
+Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
+
+Can attack: Enemy_Hunger(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Debug:LogFormat(String, Object[])
+Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
+
+Can attack: Enemy_Hunger(Clone)
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Debug:LogFormat(String, Object[])
+Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:69)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/Player.cs Line: 69)
+
+Index of enemy: 0
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+UnityEngine.Debug:LogFormat(String, Object[])
+EnemisController:DefeatEnemy(EnemyHunger) (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\EnemisController.cs:45)
+Player:Update() (at D:\Eduardo\Game Development\GIT\LudumDareApril2015\Unity3d-Project\LudumDareApril2015\Assets\Scripts\Player.cs:77)
+ 
+(Filename: D:/Eduardo/Game Development/GIT/LudumDareApril2015/Unity3d-Project/LudumDareApril2015/Assets/Scripts/EnemisController.cs Line: 45)
 
