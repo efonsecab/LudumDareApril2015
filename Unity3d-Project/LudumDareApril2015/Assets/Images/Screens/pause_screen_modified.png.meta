@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 517712cc3c8e8d245afbb7713313848f
+timeCreated: 1429549892
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: pause_screen_modified_logo
+    21300002: pause_screen_modified_Move_Instruction
+    21300004: pause_screen_modified_AttackInstruction
+    21300006: pause_screen_modified_Option_Icon
+    21300008: pause_screen_modified_PauseText
+    21300010: pause_screen_modified_ResumeText
+    21300012: pause_screen_modified_MainMenuText
+    21300014: pause_screen_modified_ExitText
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: pause_screen_modified_logo
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 369
+        width: 779
+        height: 691
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pause_screen_modified_Move_Instruction
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 846
+        width: 512
+        height: 68
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pause_screen_modified_AttackInstruction
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 748
+        width: 359
+        height: 77
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pause_screen_modified_Option_Icon
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 575
+        width: 62
+        height: 95
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pause_screen_modified_PauseText
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 399
+        width: 348
+        height: 99
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pause_screen_modified_ResumeText
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 232
+        width: 226
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pause_screen_modified_MainMenuText
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 142
+        width: 313
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: pause_screen_modified_ExitText
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 59
+        width: 128
+        height: 59
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

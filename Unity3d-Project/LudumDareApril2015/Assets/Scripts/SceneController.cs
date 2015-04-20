@@ -7,38 +7,60 @@ public class SceneController : MonoBehaviour
 {
     public AudioSource PlayAudio;
     public AudioSource ButtonClickAudio;
-    private bool HastToStartGame = false;
-    private float SecondsElapsedSinceStartRequest = 0;
-    private float SecondsOnStartRequest = 0;
+
     // Use this for initialization
     void Start()
     {
+        Time.timeScale = 1;
     }
+
 
     // Update is called once per frame
-    void Update()
+
+
+    public IEnumerator IStartGame(float secondsToWait, string sceneToLoad)
     {
-        SecondsElapsedSinceStartRequest = Time.time - SecondsOnStartRequest;
-        if (Input.GetKeyUp(KeyCode.Return))
-        {
-            StartGame();
-        }
-        if (this.HastToStartGame && SecondsElapsedSinceStartRequest > 2.5)
-        {
-            Application.LoadLevel("GameScene");
-        }
+        ButtonClickAudio.Play();
+        PlayAudio.Play();
+        yield return new WaitForSeconds(secondsToWait);
+        Debug.LogFormat("Loading Level: {0}", sceneToLoad);
+        Application.LoadLevel(sceneToLoad);
     }
 
-    public void StartGame()
+    public void StartGame(string sceneToLoad)
     {
-        GameObject.FindObjectsOfType<Button>().ToList().ForEach((button) => 
+        GameObject.FindObjectsOfType<Button>().ToList().ForEach((button) =>
         {
             button.interactable = false;
         }
         );
-        this.SecondsOnStartRequest = Time.time;
-        ButtonClickAudio.Play();
-        PlayAudio.Play();
-        this.HastToStartGame=true;
+        StartCoroutine(IStartGame(2.5f, sceneToLoad));
+    }
+
+    public Button PauseButton;
+    public CanvasRenderer PausePanel;
+
+    public void SetPause()
+    {
+        this.PauseButton.interactable = false;
+        Time.timeScale = 0;
+        this.PausePanel.gameObject.SetActive(true);
+    }
+
+    public void Resume()
+    {
+        this.PauseButton.interactable = true;
+        this.PausePanel.gameObject.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void LoadScene(string sceneName)
+    {
+        Application.LoadLevel(sceneName);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }
