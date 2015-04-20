@@ -1,9 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using System.Linq;
 
 public class SceneController : MonoBehaviour
 {
     public AudioSource PlayAudio;
+    public AudioSource ButtonClickAudio;
     private bool HastToStartGame = false;
     private float SecondsElapsedSinceStartRequest = 0;
     private float SecondsOnStartRequest = 0;
@@ -28,7 +31,13 @@ public class SceneController : MonoBehaviour
 
     public void StartGame()
     {
+        GameObject.FindObjectsOfType<Button>().ToList().ForEach((button) => 
+        {
+            button.interactable = false;
+        }
+        );
         this.SecondsOnStartRequest = Time.time;
+        ButtonClickAudio.Play();
         PlayAudio.Play();
         this.HastToStartGame=true;
     }
