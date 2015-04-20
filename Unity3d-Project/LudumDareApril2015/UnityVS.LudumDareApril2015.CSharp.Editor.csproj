@@ -99,13 +99,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityVS.LudumDareApril2015.CSharp.Plugins.csproj">
-      <Project>{85232601-8A95-9633-27FE-4A03131902BC}</Project>
-      <Name>UnityVS.LudumDareApril2015.CSharp.Plugins</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityVS.LudumDareApril2015.CSharp.csproj">
       <Project>{EC5521E9-0B83-8AF3-2E0D-92E20D139B16}</Project>
       <Name>UnityVS.LudumDareApril2015.CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityVS.LudumDareApril2015.CSharp.Plugins.csproj">
+      <Project>{85232601-8A95-9633-27FE-4A03131902BC}</Project>
+      <Name>UnityVS.LudumDareApril2015.CSharp.Plugins</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
