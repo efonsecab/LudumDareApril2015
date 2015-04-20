@@ -51,6 +51,7 @@ public class SceneController : MonoBehaviour
     {
         this.PauseButton.interactable = true;
         this.PausePanel.gameObject.SetActive(false);
+        this.DefeatPanel.gameObject.SetActive(false);
         Time.timeScale = 1;
     }
 
@@ -59,8 +60,34 @@ public class SceneController : MonoBehaviour
         Application.LoadLevel(sceneName);
     }
 
+    public void RestartCurrentLevel()
+    {
+        Application.LoadLevel(Application.loadedLevelName);
+    }
+
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public CanvasRenderer DefeatPanel;
+    public void PlayerDefeated()
+    {
+        Time.timeScale = 0;
+        this.DefeatPanel.gameObject.SetActive(true);
+    }
+
+    public CanvasRenderer HistoryPanel;
+    public CanvasRenderer CreditsPanel;
+    public void ShowHistoryPanel()
+    {
+        this.CreditsPanel.gameObject.SetActive(false);
+        this.HistoryPanel.gameObject.SetActive(true);
+    }
+
+    public void ShowCreditsPanel()
+    {
+        this.CreditsPanel.gameObject.SetActive(true);
+        this.HistoryPanel.gameObject.SetActive(false);
     }
 }

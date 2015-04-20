@@ -125,7 +125,7 @@ public class EnemyHunger : MonoBehaviour
         this.PlayerComponent.CurrentStats.HealthPoints = currentPlayerHP;
         if (this.PlayerComponent.CurrentStats.HealthPoints == 0)
         {
-
+            PlayerComponent.SceneController.PlayerDefeated();
             Debug.Log("Player lost");
             Time.timeScale = 0;
         }

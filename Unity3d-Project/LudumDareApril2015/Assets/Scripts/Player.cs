@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     public int Speed = 1;
     public int ImpulseForceOnEnemy = 10;
     private Animator[] AnimatorControllers;
+    public SceneController SceneController;
     // Use this for initialization
     void Start()
     {
