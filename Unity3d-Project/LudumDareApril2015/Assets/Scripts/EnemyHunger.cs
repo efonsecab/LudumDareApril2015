@@ -19,6 +19,8 @@ public class EnemyHunger : MonoBehaviour
     public bool IsValidTarget = false;
     private float DistanceToTarget;
     public bool CanAttack = false;
+
+
     // Use this for initialization
     void Start()
     {

@@ -18,10 +18,12 @@ public class Player : MonoBehaviour
     public Slider PlayerHealhPointsBar;
     public int Speed = 1;
     public int ImpulseForceOnEnemy = 10;
+    private Animator[] AnimatorControllers;
     // Use this for initialization
     void Start()
     {
         this.InitialHP = this.CurrentStats.HealthPoints;
+        this.AnimatorControllers = this.GetComponentsInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -31,6 +33,10 @@ public class Player : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
         Vector3 direction = this.transform.localScale;
+        if ( (h != 0 || v != 0) && Input.GetKeyUp(KeyCode.Z) == false )
+        {
+            SetTrigger("Mover");
+        }
         if (h < 0 && this.CurrentLookingTo != LookingTo.Left)
         {
             this.CurrentLookingTo = LookingTo.Left;
@@ -57,6 +63,7 @@ public class Player : MonoBehaviour
         Debug.DrawRay(this.transform.position, fwd, Color.black);
         if (Input.GetKeyUp(KeyCode.Z))
         {
+            SetTrigger("Atacar");
             EnemyHunger closestEnemy = this.EnemyController.SpawnedEnemies.OrderBy(d => d.GetDistanceToTarget()).FirstOrDefault();
             if (closestEnemy != null && closestEnemy.IsValidTarget)
             {
@@ -69,6 +76,18 @@ public class Player : MonoBehaviour
             //this.transform.position += fwd;
         }
 	}
+
+    private void SetTrigger(string trigger)
+    {
+        foreach (Animator singleAnimator in this.AnimatorControllers)
+        {
+            if (singleAnimator.runtimeAnimatorController != null && singleAnimator.isActiveAndEnabled)
+            {
+                Debug.Log(trigger);
+                singleAnimator.SetTrigger(trigger);
+            }
+        }
+    }
 
     private void AttackByRaycasting(ref Vector3 fwd, ref Ray newRay, ref RaycastHit raycastHitInfo)
     {
